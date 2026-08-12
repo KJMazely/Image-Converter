@@ -12,9 +12,10 @@ A Python GUI and CLI Image Converter, that can convert Image files to JPG or PNG
 - Clone this repository ```git clone https://github.com/KJMazely/Image-Converter.git``` (or download ZIP and extract)
 - Install these Python Packages (as listed above) using the commands below.
 
-### Windows:
-```pip install -r requirements.txt```
-### Linux:
+**Windows:**
+- ```pip install -r requirements.txt```
+
+**Linux:**
 - ```pip3 install pillow pillow-heif```
 - ```sudo apt-get install ffmpeg```
 
@@ -33,32 +34,40 @@ To start the program, run ```python image_converter.py```
 ## Command Line Interface
 When you run this program, you will need to provide a file name in the local directory and a format you want to convert it into.
 
-### Windows: 
-```python image_converter.py --file [File Name] --new-format [image file format]```
-### Linux: 
-```python3 image_converter.py --file [File Name] --new-format [image file format]```
-#### Example: 
-```python image_converter.py --file image_file.heic --new-format jpg``` (Keep in mind that spaces in the file name will break the command, make sure to rename the file to have no spaces beforehand)
-
-If you want the converted file in a different directory, then add:
-
-### Windows and Linux:
-```--output-dir [Path to Directory]```
-
-If you would like to list the files in the local directory, then run:
-
-### Windows: 
-```python image_converter.py --list files```
-### Linux: 
-```python3 image_converter.py --list files```
+**Windows:**
+- ```python image_converter.py --file [File Name] --new-format [image file format]```
   
-If you want to list the formats you want to convert the file into, then run:
-
-### Windows: 
-```python image_converter.py --list formats```
-### Linux: 
-```python3 image_converter.py --list formats```
+**Linux:**
+- ```python3 image_converter.py --file [File Name] --new-format [image file format]```
   
+**Example:** 
+- ```python image_converter.py --file image_file.heic --new-format jpg``` (Keep in mind that spaces in the file name will break the command, make sure to rename the file to have no spaces beforehand)
+
+### If you want the converted file in a different directory, then add:
+
+**Windows and Linux:**
+- ```--output-dir [Path to Directory]```
+
+
+### If you would like to list the files in the local directory, then run:
+
+**Windows:**
+- ```python image_converter.py --list files```
+  
+**Linux:** 
+- ```python3 image_converter.py --list files```
+
+
+### If you want to list the formats you want to convert the file into, then run:
+
+**Windows:**
+- ```python image_converter.py --list formats```
+  
+**Linux:** 
+- ```python3 image_converter.py --list formats```
+
+
+
 # Portable Image Converter (Windows Only)
 If you want to make a portable executable file. Run ```pip install -r portable.txt```, to install packages that can be used to make a portable exe file. This will install "pyinstaller" a CLI program that will make convert a python file into a portable executable. Or you can download an executable from the latest release in the "releases" page.
 
