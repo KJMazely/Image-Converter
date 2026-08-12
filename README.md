@@ -15,8 +15,8 @@ A Python GUI and CLI Image Converter, that can convert Image files to JPG or PNG
 ### Windows:
 ```pip install -r requirements.txt```
 ### Linux:
-```pip3 install pillow pillow-heif```
-```sudo apt-get install ffmpeg```
+- ```pip3 install pillow pillow-heif```
+- ```sudo apt-get install ffmpeg```
 
 # Running the program:
 There are two different ways to use the program, through a GUI or CLI
