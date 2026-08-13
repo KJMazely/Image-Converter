@@ -290,6 +290,9 @@ if HAS_GUI:
                 frame, textvariable=self.format_var, values=FORMATS,
                 state="readonly", width=14,
             ).grid(row=4, column=1, sticky="w", pady=(12, 0))
+            # Output format information button
+            extension_info_button = ttk.Button(frame, text="What File Type Do I Use?", command=self._file_info)
+            extension_info_button.grid(row=4, column=1, columnspan=2, sticky="e", padx=(0,85), pady=(12, 0))
 
             # Main action button
             self.convert_button = ttk.Button(
@@ -333,6 +336,13 @@ if HAS_GUI:
             set_title_bar_color(self, self._dark)   # sync the native title bar
             save_theme_preference(self._dark)       # persist choice for next launch
 
+        def _file_info(self):
+            """Opens info message letting user know which type of file extension to use."""
+            messagebox.showinfo(
+                "What Type of File Should I Use?",
+                "Use png for files with a transparent background.\n\n"
+                "Use jpg for all other files and/or if storage space is limited."
+            )
 
         def _path_row(self, parent, row, label, variable, command):
             """Build a labelled row containing a text entry and a Browse button."""
